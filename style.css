@@ -1,0 +1,108 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+#hello{
+    height: 70vh;
+    background-image:  linear-gradient(rgba(255, 166, 0, 0.479), rgba(255, 166, 0, 0.494)),url(pexels-padrinan-255379.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px), saturate(180%);
+}
+
+
+.navbar{
+    width: 100%;
+    height: 7%;
+    background-color: rgb(33, 31, 31);
+    display: flex;
+    position: fixed;
+}
+
+.nav-item{
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 7%;
+    text-align: center;
+    height: 40px;
+    margin-top: 6px;
+    vertical-align: middle;
+    line-height: 40px;
+    display: block;
+}
+
+.nav-item.active{
+    background-color: rgb(244, 113, 26);
+}
+
+a:hover{
+    color: yellow;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar{
+      background-color: rgb(33, 31, 31);
+      width: 100%;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    
+    }
+    
+    #hi{
+        top: 500px;
+    }
+    .nav-item{
+        width: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 256px) {
+    .nav-item{
+        width: 40%;
+    }
+
+    .nav-item.active{
+        background-color: rgb(244, 113, 26);
+    }
+}
+
+footer{
+    color: white;
+    background-color: black;
+    font-weight: 200;
+    text-align: center;
+    height: 20vh;
+    padding: 100px;
+}
+
+#hi{
+    background-image: radial-gradient(pink, blue, purple);
+    color: white;
+    font-weight: 100;
+    display: flex;
+    text-align: center;
+   justify-content: center;
+    padding: 20px;
+    height: 87.5vh;
+
+}
+
+.container{
+    margin-top: 100px;
+    line-height: 40vh;
+}
